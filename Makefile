@@ -18,7 +18,7 @@ OPENMP_LIB ?= 1
 
 all: pgd
 
-CFLAGS = -O3 
+CFLAGS = -std=c++03
 
 ifeq ($(OPENMP_LIB),1)
         CFLAGS += -fopenmp
